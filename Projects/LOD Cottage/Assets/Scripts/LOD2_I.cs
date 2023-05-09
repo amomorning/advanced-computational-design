@@ -21,12 +21,12 @@ public class LOD2_I : MolaMonoBehaviour
 
     private void OnValidate()
     {
-        Random.InitState(0);
         UpdateGeometry();
     }
 
     public override void UpdateGeometry()
     {
+        Random.InitState(0);
         #region REPLACE THIS PART WITH YOUR OWN DESIGN
         // create mola mesh for current LOD level
         MolaMesh floor = MeshFactory.CreateSingleQuad(dX / 2, -dY / 2, 0, dX / 2, dY / 2, 0, -dX / 2, dY / 2, 0, -dX / 2, -dY / 2, 0, false);

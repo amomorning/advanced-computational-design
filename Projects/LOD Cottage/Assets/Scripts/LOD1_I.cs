@@ -56,12 +56,12 @@ public class LOD1_I : MolaMonoBehaviour
 
     private void OnValidate()
     {
-        Random.InitState(0);
         UpdateGeometry();
     }
 
     public override void UpdateGeometry()
     {
+        Random.InitState(0);
         #region REPLACE THIS PART WITH YOUR OWN DESIGN
         // 01 get mola meshes from LOD2
         molaMeshes = GetMeshFromLOD();
